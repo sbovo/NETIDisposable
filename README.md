@@ -19,16 +19,21 @@ For taking a dump, you can just use ProcDump.exe from SysInternals Suite:
 ### Quick look with WinDbg
 You can then freely open the dumps with WinDbg. The initial steps are:
 1. Set the Symbols path
+
 `.sympath SRV*C:\_PublicSymbols*http://msdl.microsoft.com/download/symbols`
 
 2. Load the symbols
+
 `.reload`
 
 3. Load SOS extension
+
 `.loadby sos clr`
 
 ![InitialStepsWithWindbg](https://user-images.githubusercontent.com/10991852/27740779-56b56760-5db3-11e7-86f0-75fbc044b158.png)
 
 4. Count your object still in memory
+
 `!DumpHeap -stat`
+
 ![DumpHeap](https://user-images.githubusercontent.com/10991852/27740871-9d4c2baa-5db3-11e7-99d9-35f863db5aa0.png)
