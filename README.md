@@ -8,7 +8,7 @@ Working on the implementations of IDisposable is not so easy. The IDisposableInA
 In the program.cs, you have 3 code blocks: One for each test. You can uncomment one of these block and run the RELEASE compiled version of the console app.
 The app wait for you to press ENTER. It is time for you to take a memory dump (instructions below).
 You can then press ENTER and before the app finishes, you can take another dump.
-!![consoleAppWaitingForENTER](https://user-images.githubusercontent.com/10991852/27739753-f1aa2804-5daf-11e7-9e39-d4c1151965e3.png)
+!![consoleAppWaitingForENTER](https://user-images.githubusercontent.com/10991852/27739828-3b354daa-5db0-11e7-89cb-9c460de46bc8.png)
 
 You be then able to look at the taken dumps for each scenarios in order to figure out what are the objects still in the process memory.
 
