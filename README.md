@@ -17,3 +17,15 @@ For taking a dump, you can just use ProcDump.exe from SysInternals Suite:
 ![CreateADumpWithProcdump](https://user-images.githubusercontent.com/10991852/27739097-bdb0d6b2-5dad-11e7-89ec-504e4f70cbe0.png)
 
 ### Quick look with WinDbg
+You can then freely open the dumps with WinDbg. The initial steps are:
+>1\.Set the Symbols path
+\`.sympath SRV*C:\_PublicSymbols*http://msdl.microsoft.com/download/symbols
+
+>2\.Load the symbols
+\`.reload
+
+>3\.Load SOS extension
+\`.loadby sos clr
+
+![InitialStepsWithWindbg](https://user-images.githubusercontent.com/10991852/27740779-56b56760-5db3-11e7-86f0-75fbc044b158.png)
+
